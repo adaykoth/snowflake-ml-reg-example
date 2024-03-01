@@ -69,14 +69,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    _ = get_session.session()
-    model_reg = Registry(session=_,
-                         database_name="core",
-                         schema_name='test')
-
-    model1 = model_reg.get_model('model1')
-    model2 = model_reg.get_model('model2')
-    model1.default = 'v3'
-    model2.default = 'v3'
-    print(model1.default)
+    main()
